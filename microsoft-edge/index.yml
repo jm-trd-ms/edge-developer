@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: MSEdgeTeam
   ms.author: msedgedevrel
-  ms.date: 09/08/2020
+  ms.date: 10/02/2020
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -135,7 +135,7 @@ additionalContent:
       # summary: # < 160 chars (optional)
       items:
         # Card
-        - title: Getting Started with DevTools
+        - title: Get Started with DevTools
           links:
             - text: DevTools Overview
               url: /microsoft-edge/devtools-guide-chromium
@@ -152,7 +152,7 @@ additionalContent:
             - text: Resources
               url: /microsoft-edge/devtools-guide-chromium/resources/index
         # Card
-        - title: Individual Tool Guides
+        - title: Individual DevTool Guides
           links:
             - text: Console
               url: /microsoft-edge/devtools-guide-chromium/console/index
@@ -182,7 +182,7 @@ additionalContent:
             - text: Keyboard Shortcuts
               url: /microsoft-edge/devtools-guide-chromium/shortcuts
         # Card
-        - title: Test & Automation
+        - title: Test and Automation
           links:
             - text: Accessibility
               url: /microsoft-edge/accessibility 

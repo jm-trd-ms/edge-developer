@@ -3,7 +3,7 @@ description: Learn how to test your website or app in Microsoft Edge or automate
 title: WebDriver (Chromium)
 author: MSEdgeTeam
 ms.author: msedgedevrel
-ms.date: 09/01/2020
+ms.date: 10/02/2020
 ms.topic: article
 ms.prod: microsoft-edge
 ms.technology: devtools
@@ -15,9 +15,9 @@ keywords: microsoft edge, web development, html, css, javascript, developer, web
 WebDriver enables developers to create automated tests that simulate user interaction.  WebDriver tests and simulations differ from JavaScript unit tests because of the following reasons. 
 *   Accesses functionality and information not available to JavaScript running in browsers.  
 *   Simulates user events or OS-level events more accurately.  
-*   Manages testing across multiple windows, tabs, and webpages in a single test session.  
+*   Manages tests across multiple windows, tabs, and webpages in a single test session.  
 *   Runs multiple sessions of Microsoft Edge on a specific machine.  
-
+    
 The following section describes how to get started with WebDriver for Microsoft Edge \(Chromium\).  
 
 ## Install Microsoft Edge (Chromium)  
@@ -28,21 +28,21 @@ Ensure you install [Microsoft Edge (Chromium)][MicrosoftEdge].  To confirm that 
 
 To begin automating tests, use the following steps to ensure that the WebDriver version you install matches your browser version.  
 
-1.  Go to `edge://settings/help` to get the version of Edge.  
+1.  Go to `edge://settings/help` to get the version of Microsoft Edge.  
     
     :::image type="complex" source="./media/webdriver-chromium/edge-version.png" alt-text="The build number for Microsoft Edge Canary on January 14, 2020":::
-       Figure 1.  The build number for Microsoft Edge Canary on January 14, 2020
+       The build number for Microsoft Edge Canary on January 14, 2020
     :::image-end:::  
     
 1.  Navigate to the [Microsoft Edge Driver downloads][MicrosoftDeveloperEdgeToolsWebdriverDownloads] page and download the driver that matches the Edge version number.  
     
     :::image type="complex" source="./media/webdriver-chromium/edge-driver-install.png" alt-text="The Downloads section of the Microsoft Edge Driver page":::
-       Figure 2.  The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page
+       The Downloads section of the [Microsoft Edge Driver][MicrosoftDeveloperEdgeToolsWebdriver] page
     :::image-end:::  
     
     > [!NOTE] 
-    > For more information about test automation using Microsoft Edge (EdgeHTML), see [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
-
+    > For more information about test automation using Microsoft Edge (EdgeHTML), navigate to [Microsoft WebDriver for Microsoft Edge (EdgeHTML)][Webdriver].  
+    
 ## Choose a WebDriver language binding  
 
 The last component you must download is a language-specific client driver to translate your code \(Python, Java, C\#, Ruby, JavaScript\) into commands the Microsoft Edge Driver runs in Microsoft Edge \(Chromium\).  
@@ -92,7 +92,7 @@ You may run the following examples using either Selenium 3 or 4.  To use with Se
 
 ### Basic Usage  
 
-To use with Microsoft Edge \(EdgeHTML\), simply create a default instance of the `EdgeDriver` class.
+To use with Microsoft Edge \(EdgeHTML\), create a default instance of the `EdgeDriver` class.
 
 #### [C#](#tab/c-sharp/)  
 
@@ -242,7 +242,7 @@ driver = Edge(service_args = service_args)
 
 <a id="customizing-microsoft-edge-driver-services-code"></a>  
 
-When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  You may optionally pass the `Service` object to the `Driver` object which starts and stops the service for you.  
+When using JavaScript, create and configure a `Service` with the `ServiceBuilder` class.  You may optionally pass the `Service` object to the `Driver` object that starts and stops the service for you.  
 To configure the `Service`, run additional methods in the `ServiceBuilder` class before using the `build()` method.  Then pass the `service` as a parameter in the `Driver.createSession()` method.  
 
 ```javascript
@@ -303,7 +303,7 @@ If you use [Chocolatey][Chocolatey] as your package manager, install the Microso
 choco install selenium-chromium-edge-driver
 ```  
 
-For more information, see [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].  
+For more information, navigate to [Selenium Chromium Edge Driver on Chocolatey][ChocolateyPackagesSeleniumChromiumEdgeDriver].  
 
 ### Docker  
 
@@ -313,18 +313,16 @@ If you use [Docker][DockerHub], download a pre-configured image with Microsoft E
 docker run -d -p 9515:9515 mcr.microsoft.com/msedge/msedgedriver
 ```  
 
-For more information, see [container on Docker Hub][DockerHubMsedgedriver].  
+For more information, navigate to [container on Docker Hub][DockerHubMsedgedriver].  
 
 ## Getting in touch with the Microsoft Edge DevTools team  
 
-The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  Use the **Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterTweetEdgeDevTools] to let the team know what you think.  
+The Microsoft Edge team is eager to hear your feedback about using WebDriver, Selenium, and Microsoft Edge.  To provide your feedback, use the **Feedback** icon in the Microsoft Edge DevTools or tweet [@EdgeDevTools][TwitterTweetEdgeDevTools].  
 
 
 :::image type="complex" source="./devtools-guide-chromium/media/bing-devtools-send-feedback.msft.png" alt-text="The Send Feedback icon in the Microsoft Edge DevTools":::
    The **Send Feedback** icon in the Microsoft Edge DevTools  
 :::image-end:::  
-
-<!-- image links -->  
 
 <!-- links -->  
 
